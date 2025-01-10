@@ -1,6 +1,22 @@
+:root {  
+  /* fonts */
+  --font-primary: 'Inter', sans-serif;
+  --font-secondary: 'EB Garamond', sans-serif;
+
+  /* colors */
+  --color-black: #131313;
+  --color-yellow: #FEE42A;
+  --color-gray: #343434;
+  --color-red: #F83C33;
+}
+
 * {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-primary);
   font-size: 16px;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .container {
@@ -12,15 +28,15 @@
 
 /* Утилитарные классы */
 .bg-black {
-  background-color: #131313;
+  background-color: var(--color-black);
 }
 
 .bg-yellow {
-  background-color: #FEE42A;
+  background-color: var(--color-yellow);
 }
 
 .bg-gray {
-  background-color: #343434;
+  background-color: var(--color-gray);
 }
 
 .light-text {
@@ -28,25 +44,25 @@
 }
 
 .dark-text {
-  color: #131313;
+  color: var(--color-black);
 }
 
 .main-text {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-primary);
   font-size: 20px;
   font-weight: 400;
   line-height: 135%;
 }
 
 .h2 {
-  font-family: 'EB Garamond', sans-serif;
+  font-family: var(--font-secondary);
   font-size: 28px;
   font-weight: 500;
   line-height: 115%;
 }
 
 .h3 {
-  font-family: 'EB Garamond', sans-serif;
+  font-family: var(--font-secondary);
   font-size: 22px;
   font-weight: 500;
   line-height: 135%;
@@ -81,7 +97,7 @@
 
 .hero__title {
   position: relative;
-  font-family: "EB Garamond", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 72px;
   line-height: 100%;
   display: flex;
@@ -106,7 +122,7 @@
   height: 120px;
   position: absolute;
   clip-path: circle(50.0% at 50% 50%);
-  background-color: #FEE42A;
+  background-color: var(--color-yellow);
   top: 95px;
   left: 10px;
   z-index: 2;
@@ -121,7 +137,7 @@
   width: 118px;
   height: 118px;
   clip-path: circle(50.0% at 50% 50%);
-  background-color: #131313;
+  background-color: var(--color-black);
   z-index: 1;
 }
 
@@ -130,9 +146,9 @@
   height: 120px;
   position: absolute;
   clip-path: polygon(15% 0, 100% 65%, 0 100%);
-  background-color: #F83C33;
-  top: 30px;
-  left: 270px;
+  background-color: var(--color-red);
+  top: 35px;
+  left: 210px;
   z-index: 2;
 }
 
@@ -145,7 +161,7 @@
   width: 118px;
   height: 118px;
   clip-path: polygon(15% 0, 100% 65%, 0 100%);
-  background-color: #131313;
+  background-color: var(--color-black);
   z-index: 1;
 }
 
@@ -182,7 +198,7 @@
 }
 
 .barriers__list {
-  padding-left: 16px;
+  padding-left: 8px;
 }
 
 .list {
@@ -218,9 +234,13 @@
   border-radius: 50%;
 }
 
+.card__image-description {
+  font-weight: bold;
+}
+
 /* footer */
 .footer {
-  border-top: 1px solid #FEE42A;
+  border-top: 1px solid var(--color-yellow);
 }
 
 .footer__inner {
