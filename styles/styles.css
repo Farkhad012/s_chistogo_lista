@@ -1,4 +1,4 @@
-:root {  
+:root {
   /* fonts */
   --font-primary: 'Inter', sans-serif;
   --font-secondary: 'EB Garamond', sans-serif;
@@ -59,6 +59,7 @@ body {
   font-size: 28px;
   font-weight: 500;
   line-height: 115%;
+  text-indent: 76px;
 }
 
 .h3 {
@@ -66,10 +67,6 @@ body {
   font-size: 22px;
   font-weight: 500;
   line-height: 135%;
-}
-
-.h2:first-child {
-  text-indent: 76px;
 }
 
 .flex-column {
@@ -121,7 +118,7 @@ body {
   width: 120px;
   height: 120px;
   position: absolute;
-  clip-path: circle(50.0% at 50% 50%);
+  border-radius: 50%;
   background-color: var(--color-yellow);
   top: 95px;
   left: 10px;
@@ -136,7 +133,7 @@ body {
   display: block;
   width: 118px;
   height: 118px;
-  clip-path: circle(50.0% at 50% 50%);
+  border-radius: 50%;
   background-color: var(--color-black);
   z-index: 1;
 }
@@ -167,7 +164,7 @@ body {
 
 /* section intro */
 .intro__inner {
-  padding-block: 30px 37px;
+  padding: 30px 20px 37px;
 }
 
 .intro__inner,
@@ -194,7 +191,7 @@ body {
 
 /* section barriers */
 .barriers__inner {
-  padding-block: 40px;
+  padding: 40px 20px;
 }
 
 .barriers__list {
@@ -222,7 +219,7 @@ body {
 
 /* section strategies */
 .strategies__inner {
-  padding-block: 45px 88px;
+  padding: 45px 20px 88px;
 }
 
 .card {
